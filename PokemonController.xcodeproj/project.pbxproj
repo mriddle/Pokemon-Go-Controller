@@ -99,12 +99,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1111831F1D2E76AF00AD1C0E /* Build configuration list for PBXNativeTarget "PokemonController" */;
 			buildPhases = (
-				9DD09A239643F067DF08B10F /* 📦 Check Pods Manifest.lock */,
+				9DD09A239643F067DF08B10F /* [CP] Check Pods Manifest.lock */,
 				111183091D2E76AE00AD1C0E /* Sources */,
 				1111830A1D2E76AE00AD1C0E /* Frameworks */,
 				1111830B1D2E76AE00AD1C0E /* Resources */,
-				542D32095E78B7B38856F577 /* 📦 Embed Pods Frameworks */,
-				502D59350C3E744C77DAAB68 /* 📦 Copy Pods Resources */,
+				542D32095E78B7B38856F577 /* [CP] Embed Pods Frameworks */,
+				502D59350C3E744C77DAAB68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,14 +162,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		502D59350C3E744C77DAAB68 /* 📦 Copy Pods Resources */ = {
+		502D59350C3E744C77DAAB68 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,14 +177,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokemonController/Pods-PokemonController-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		542D32095E78B7B38856F577 /* 📦 Embed Pods Frameworks */ = {
+		542D32095E78B7B38856F577 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,14 +192,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokemonController/Pods-PokemonController-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9DD09A239643F067DF08B10F /* 📦 Check Pods Manifest.lock */ = {
+		9DD09A239643F067DF08B10F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +335,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PokemonController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.kahopoon.PokemonController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,6 +352,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PokemonController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.kahopoon.PokemonController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
