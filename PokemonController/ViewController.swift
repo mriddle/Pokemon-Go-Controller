@@ -90,7 +90,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         webServer.addDefaultHandlerForMethod("GET", requestClass: GCDWebServerRequest.self, processBlock: {request in
             return GCDWebServerDataResponse.init(JSONObject: self.getCurrentLocationDict())
         })
-        webServer.startWithPort(80, bonjourName: "pokemonController")
+        webServer.startWithPort(8080, bonjourName: "pokemonController")
     }
     
     override func didReceiveMemoryWarning() {
