@@ -16,18 +16,28 @@ class ViewController: UIViewController, MKMapViewDelegate {
     var currentLocation:CLLocationCoordinate2D!
     //let moveInterval = 0.00005
     var webServer:GCDWebServer = GCDWebServer()
-    
+
+  let initialLocation = CLLocation(latitude: -37.7983336702636, longitude: 144.978288)
+  let regionRadius: CLLocationDistance = 1000
+
     func moveInterval() -> Double {
         return Double("0.0000\(40 + (rand() % 20))")!
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        centerMapOnLocation(initialLocation)
         getSavedLocation() ? showMapOnLocation() : ()
         
         startWebServer()
     }
+
+  func centerMapOnLocation(location: CLLocation) {
+    let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+                                                              regionRadius * 2.0, regionRadius * 2.0)
+    mapView.setRegion(coordinateRegion, animated: true)
+  }
 
     func mapView(mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         currentLocation = mapView.centerCoordinate
